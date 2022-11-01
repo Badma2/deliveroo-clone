@@ -13,7 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 //   ChevronDownIcon,
 //   SearchIcon,
 //   AdjustmentsIcon,
-// } from "react-native-heroicons/outline";
+//} from "react-native-heroicons/outline";
 
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Categories from "../components/Categories";
@@ -43,28 +43,24 @@ const HomeScreen = () => {
           <Text className="font-bold text-gray-400 text-xs">Deliver Now!</Text>
           <Text className="font-bold text-xl">
             Current Location
-            <FontAwesome5
-              name="arrow-alt-circle-down"
-              size={20}
-              color="#00CCBB"
-            />
+            <FontAwesome5 name="arrow-down" size={20} color="#00CCBB" />
           </Text>
         </View>
 
-        <FontAwesome5 name="user-astronaut" size={35} color="#00CCBB" />
+        <FontAwesome5 name="user-alt" size={30} color="#00CCBB" />
       </View>
 
       {/* Search*/}
       <View className="flex-row items-center space-x-2 pb-2 mx-4">
         <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3">
-          <FontAwesome5 name="search-plus" color="gray" size={20} />
+          <FontAwesome5 name="search" color="gray" size={20} />
           <TextInput
             placeholder="Restaurants and cuisines"
             keyboardType="default"
           />
         </View>
 
-        <FontAwesome5 name="sliders-h" color="#00CCBB" />
+        <FontAwesome5 name="sliders-h" color="#00CCBB" size={20} />
       </View>
 
       {/* Body */}
